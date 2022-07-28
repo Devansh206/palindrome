@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include<math.h>
+#include <stdio.h>
+#include<iostream>
+using namespace std;
+int count (int n)
+{ int res=0,temp,d;
+    temp = n;
+    while(temp!=0)
+    {
+         d= temp%10;
+         res = res *10+d;
+         temp=temp/10;
+    }
+    if(n==res)
+    return true;
+    else
+    return false;
+}
+int main() {
+     int n;
+     cout<<"enter the number";
+     cin>>n;
+     cout<<count(n);
+
+    return 0;
+}
